@@ -10,6 +10,8 @@ div{
 
 table{
 	border-radius:10px;
+	overflow: hidden;
+	
 
 
 }
@@ -18,15 +20,40 @@ table{
 	margin-right:auto;
 
 }
+.element2 {
+  transition: all 0.4s ease-out;
+  	margin-left:auto;
+	margin-right:auto;
+}
 
+.element2:hover {
+	transform: scale(1.05) rotate(0deg) translate(0px, 0px) skewX(0deg);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.ani {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: mymove 2s ;
+}
+
+@keyframes mymove {
+  from {top: 200px;}
+  to {top: 0px;}
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
 
 </style>
 <body>
+	<div class="ani">
 	<div style="text-align:center">
 	<form>
 	<h1>Add Student</h1>
 	</div>
-	<table width=100% >
+	<hr>
+	<br>
+	<table width=80% class="element2">
 	<tr style="background-color:#FBE8CE;" height=60px>
 		<td width=50%>
 			<div><label for="profile">Upload your profile:</label>
@@ -96,7 +123,7 @@ table{
 	<tr height=60px>
 		<td colspan=2>
 			<div><input type="submit" class="btn btn-outline-primary">
-			<a href="C:\Papijan\HTML_CSS\13.03.2026\student.html"><button type="button" class="btn btn-outline-danger">Back</button></a>
+			<a href="student.html"><button type="button" class="btn btn-outline-danger">Back</button></a>
 		</td>
 	<tr>
 	

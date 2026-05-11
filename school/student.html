@@ -3,9 +3,27 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <style>
+.element {
+  transition: all 0.2s ease-out;
+}
+
+.element:hover {
+	transform: scale(1.02) rotate(0deg) translate(0px, 0px) skewX(0deg);
+}
+.element2 {
+  transition: all 0.5s ease-out;
+}
+
+.element2:hover {
+	transform: scale(1.05) rotate(0deg) translate(0px, 0px) skewX(0deg);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 table{
-	border:1px solid black;
 	border-radius:10px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow: hidden;
 
 
 }
@@ -27,49 +45,51 @@ tr{
 	margin-top:10px;
 
 }
-.button2{
-	border:none;
-	color:white;
-	background-color:#547792;
-	text-align:center; 
-	cursor:pointer;
-	font-size:25px;
-	border-radius:10px;
+nav{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.button3{
-	border:none;
-	color:white;
-	background-color:#1A3263;
-	text-align:center;
-	cursor:pointer;
-	font-size:25px;
-	border-radius:10px;
+.ani {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: mymove 2s ;
 }
-.button4{
-	border:none;
-	color:white;
-	background-color:red;
-	text-align:center;
-	cursor:pointer;
-	font-size:25px;
-	border-radius:10px;
+.ani2{
+	width: 100%;
+	height: 100%
+	position: relative;
+	animation: mymove2 2s;
 }
+@keyframes mymove {
+  from {top: 200px;}
+  to {top: 0px;}
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes mymove2 {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
 
 </style>
 </head>
 <body>
+	<div class="ani2">
 	<nav class="navbar navbar-light bg-light">
 	<div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="C:\Papijan\HTML_CSS\13.03.2026\default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" alt="" width="40" height="40" class="d-inline-block align-text-top">
+      <img src="default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" alt="" width="40" height="40" class="d-inline-block align-text-top">
       Student Table
     </a>
 	<input type="text" placeholder="Search">
 	</div>
 	</nav>
-	<p style="text-align:right;"><a href="C:\Papijan\HTML_CSS\13.03.2026\AddStudent.html"><button type="button" class="btn btn-outline-secondary div">Add Student</button></a>
-	<table width=100% border=1>
-		<tr style="background-color:#FBE8CE;" height=60px>
+	</div>
+	<div class="ani">
+	<p style="text-align:right;"><a href="AddStudent.html"><button type="button" class="btn btn-outline-secondary div">Add Student</button></a></p><br>
+	<table width=85% border=1 class="element2">
+		<tr style="background-color:#FBE8CE;" height=60px class="element">
 			<th style="text-align:center">Prifile</th>
 			<th style="text-align:center">ID</th>
 			<th style="text-align:center">Student Name</th>
@@ -79,8 +99,8 @@ tr{
 			<th style="text-align:center">Payment</th>
 			<th style="text-align:center">Action</th>
 		</tr>
-		<tr height=60px>
-		<td><img src="C:\Papijan\HTML_CSS\13.03.2026\default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" width="30"></td>
+		<tr height=60px class="element">
+		<td><img src="default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" width="30"></td>
 		<td>28098</td>
 		<td>S.Aradanan</td>
 		<td>2000-05-15</td>
@@ -89,8 +109,8 @@ tr{
 		<td>Paid</td>
 		<td><button type="button" class="btn btn-outline-primary">View</button>&nbsp;<button type="button" class="btn btn-outline-success">Edit</button>&nbsp;<button type="button" class="btn btn-outline-danger" data-bs-toggle="tooltip"  title="Warning:This data will removed permenantly">Delete</button>
 		</tr>
-		<tr style="background-color:#FBE8CE" height=60px>
-		<td><img src="C:\Papijan\HTML_CSS\13.03.2026\default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" width="30"></td>
+		<tr style="background-color:#FBE8CE" height=60px class="element">
+		<td><img src="default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" width="30"></td>
 		<td>28097</td>
 		<td>S.Ashwin</td>
 		<td>2006-05-15</td>
@@ -99,8 +119,8 @@ tr{
 		<td>Paid</td>
 		<td><button type="button" class="btn btn-outline-primary">View</button>&nbsp;<button type="button" class="btn btn-outline-success">Edit</button>&nbsp;<button type="button" class="btn btn-outline-danger" data-bs-toggle="tooltip"  title="Warning:This data will removed permenantly">Delete</button>
 		</tr>
-		<tr height=60px>
-		<td><img src="C:\Papijan\HTML_CSS\13.03.2026\default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" width="30"></td>
+		<tr height=60px class="element">
+		<td><img src="default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" width="30"></td>
 		<td>28100</td>
 		<td>S.Dhivya</td>
 		<td>2007-05-12</td>
@@ -109,8 +129,8 @@ tr{
 		<td>Paid</td>
 		<td><button type="button" class="btn btn-outline-primary">View</button>&nbsp;<button type="button" class="btn btn-outline-success">Edit</button>&nbsp;<button type="button" class="btn btn-outline-danger" data-bs-toggle="tooltip"  title="Warning:This data will removed permenantly">Delete</button>
 		</tr>
-		<tr style="background-color:#FBE8CE" height=60px>
-		<td><img src="C:\Papijan\HTML_CSS\13.03.2026\default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" width="30"></td>
+		<tr style="background-color:#FBE8CE" height=60px class="element">
+		<td><img src="default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" width="30"></td>
 		<td>28101</td>
 		<td>S.Meenu</td>
 		<td>2007-02-28</td>

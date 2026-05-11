@@ -1,0 +1,159 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		</head>
+	<style>
+			.element {
+			  transition: all 0.2s ease-out;
+			  font-family: "Segoe UI", system-ui, sans-serif;
+			}
+
+			.element:hover {
+			  transform: scale(1) rotate(0deg) translate(10px, 0px) skewX(0deg);
+			  opacity: (1);
+			  filter: brightness(1);
+			}
+			table,th,tr{
+				border-collapse:collapse;
+			}
+			a:link{
+				text-decoration:none;
+				
+			}
+			a:hover {
+				background-color:#B0E4CC;
+			}
+
+			ul {
+			  display: flex;
+			  position: absolute;
+			  transform: translate(-50%, -50%);
+			}
+
+			ul li {
+			  list-style: none;
+			}
+
+			ul li a {
+			  width: 50px;
+			  height: 50px;
+			  background-color: #fff;
+			  text-align: center;
+			  line-height: 80px;
+			  font-size: 35px;
+			  margin: 0 10px;
+			  display: block;
+			  border-radius: 50%;
+			  position: relative;
+			  overflow: hidden;
+			  border: 3px solid #fff;
+			  z-index: 1;
+			}
+			ul li a .icon {
+			  position: relative;
+			  color: #262626;
+			  transition: .5s;
+			  z-index: 3;
+			}
+
+			ul li a:hover .icon {
+			  color: #fff;
+
+			}
+
+			ul li a:before {
+			  content: "";
+			  position: absolute;
+			  top: 100%;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  background: #f00;
+			  transition: .5s;
+			  z-index: 2;
+			}
+
+			ul li a:hover:before {
+			  top: 0;
+			}
+
+			ul li:nth-child(1) a:before{
+			  background: #3b5999;
+			}
+
+			ul li:nth-child(2) a:before{
+			  background: #55acee;
+			}
+
+			ul li:nth-child(3) a:before {
+			  background: #0077b5;
+			}
+
+			ul li:nth-child(4) a:before {
+			  background: #dd4b39;
+			}
+			.alignment {
+				margin-top: 25px;
+				font-family: "Segoe UI", system-ui, sans-serif;
+
+			}
+			#alignment2 {
+				margin-bottom: 500px;
+
+			}
+			.font {
+				font-family: "Segoe UI", system-ui, sans-serif;
+			}
+	</style>
+		<body>
+			<table width=100% height=100%>
+			<tr height=10%>
+				<th width=15% style="background:#546B41"><div style="color:white; font-size:25px;" class="font">Edus Student<br>Management</div></th>
+				<th width=55% style="background:#546B41"><div style="color:white; font-size:25px;" class="font">Welcome to Admin Portal</div></th> 
+				<th width=20% style="background:#546B41"><div style="color:white; text-align:right;" class="font"><img src="default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.webp" width="40"></th>
+				<th width=10% style="background:#546B41"><div style="color:white; font-size:25px;" class="font">Admin</div></th>
+			</tr>
+			<tr height=80%>
+				<td style="background:#99AD7A">
+				<div id="alignment2">
+					<a href="home.html" target="iframe">
+					<div style="color:white; font-size:30px; vertical-align: text-top;" class="element">Home</div></a><br><br>
+					<a href="form3.html" target="iframe" >
+					<div style="color:white; font-size:30px" class="element">Form</div></a><br><br>
+					<a href="student.html" target="iframe">
+					<div style="color:white; font-size:30px" class="element">Students</div></a><br><br>
+					<a href="table.html" target="iframe">
+					<div style="color:white; font-size:30px" class="element">Time table</div></div></td>
+				
+				<td colspan=3>
+					<iframe name="iframe"  width=100% height=100%></iframe>
+				</td>
+			</tr>
+			<tr>
+				<td height=10% style="background:#546B41; text-align:center;"><div style="color:white; font-size:25px;"></div></a></td>
+				<td height=10% style="background:#546B41; text-align:center;"><div style="color:white; font-size:25px;" class="font">YarlIT</div></a></td>
+				<td height=10% style="background:#546B41; text-align: left;">
+					<div style="color:white; font-size:25px;" class="alignment">FOLLOW US ON</div></a></td>
+				
+				</td>
+				<td height=10% style="background:#546B41;">
+				
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/YarlitOfficial">
+								<i class="fab fa-facebook-f icon"></i>    </a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-twitter icon"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+						<li>
+							<a href="https://yarlit.lk/"><i class="fab fa-google-plus-g icon"></i></a></li>
+					</ul>
+				</td>
+			
+			</tr>
+
+			</table>	
+		</body>
